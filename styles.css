@@ -45,12 +45,88 @@ a:hover {
     color: #d5a7ff;
 }
 
-#assignments-list {
-    background-color: #2d3950;
-    padding: 25px 40px;
+/* Assignment and Project Sections */
+
+#assignments-section h2,
+#projects-section h2 {
+    color: #66d9ff;
+    text-align: center;
+    font-size: 30px;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.assignment-card,
+.project-card {
+    background-color: #202a3b;
+    padding: 15px;
     border-radius: 10px;
 }
 
-#assignments-list li {
-    padding: 8px;
+.assignment-card {
+    flex: 1;
+}
+
+.project-card {
+    flex: 0 0 calc((100% - 40px) / 3);
+}
+
+.assignment-card h3,
+.project-card h3 {
+    color: #9bdcff;
+    text-align: center;
+}
+
+.assignment-card img,
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: 3px solid #66d9ff;
+    border-radius: 8px;
+}
+
+.assignment-card p,
+.project-card p {
+    color: #d6e4f0;
+    line-height: 1.5;
+}
+
+#projects-section {
+    margin-top: 40px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #27496d;
+    color: white;
+}
+
+/* Small Screen Layout */
+
+@media only screen and (max-width: 700px) {
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .assignment-card,
+    .project-card {
+        width: 100%;
+        flex: none;
+    }
+
+    .assignment-card img,
+    .project-card img {
+        height: 180px;
+    }
 }

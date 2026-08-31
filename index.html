@@ -2,31 +2,89 @@
 <html lang="en">
 
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <title>CSCE 242 Web Application</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id="content">
+        <header>
                 <h1>CSCE 242 Web Application</h1>
                 <h2 id="name">Muhammad Johnson</h2>
-                   <footer>
                 <p> Web Application development covers building and designing interactive websites using HTML, CSS, JavaScript, and related technologies </p>
-            </footer>
             <p>
                 <a id="github-link"
                 href="https://github.com/mjj23/mjj23.github.io/tree/main/csce242">
                   View My GitHub Repository
                 </a>
             </p>
-
+        </header>
+        <main id="content">
+            <section id="assignments-section">
             <h2>Assignments</h2>
-            <ul id="assignments-list">
-                    <li><a href="csce242/assignments/01html/index.html">Assignment 1</a></li>
+            <div class="card-container">
+                <article class="assignment-card">
+                    <h3>Assignment 1 - Basic HTML</h3>
+                    <a href="csce242/assignments/01html/index.html">
+                        <img src="images/assgn-1.png"
+                            alt="assignment 1 Cloud Strife Weapons">
+                    </a>
+                    <p>
+                        In Assignment 1, I created a webpage about Cloud Strife's
+                        weapons using basic HTML. The page includes images, lists,
+                        a table, paragraphs, and external links.
+                    </p>
+                </article>
+                
+                <article class="assignment-card">
+                    <h3>Assignment 2 - Basic CSS</h3>
+                    <a href="csce242/assignments/02css/index.html">
+                        <img src="images/assgn-2.png"
+                            alt="assignment 2 Final Fantasy VII Materia Guide">
+                    </a>
+                    <p>
+                        In Assignment 2, I created a Final Fantasy VII Materia Guide.
+                        I used CSS to add colors, a background image, styled pictures,
+                        borders, spacing, and a formatted table.
+                    </p>
+                    </article>
 
-                    <li><a href="csce242/assignments/02css/index.html">Assignment 2</a></li>
+                    <article class="assignment-card">
+                        <h3>Assignment 3 - Flexbox Layout</h3>
+                        <a href="csce242/assignments/02css/index.html">
+                            <img src="images/assgn-3.png"
+                                alt="Assignment 3 Cloud Strife Weapons">
+                        </a>
+                        <p>
+                            In Assignment 3, I used CSS Flexbox to create a responsive
+                        Cloud Strife weapon page. The layout displays in columns on
+                        larger screens and stacks vertically on smaller screens.
+                        </p>
+                    </article>
+                 </div>
+            </section>
 
-                    <li><a href="csce242/assignments/03flex/index.html">Assignment 3</a></li>
-            </ul>
-        </div>
+            <section id="projects-section">
+                <h2>Projects</h2>
+                <div class="card-contatiner">
+                    <article class="project-card">
+                        <h3>Project Part 1 - Topic Proposal</h3>
+                        <a href="projects/part1/proposal.pdf">
+                            <img src="images/prop-1.png"
+                                alt="Cloud Strife Arsenal Project Proposal">
+                        </a>
+                        <p>
+                            My project proposal is for a website called Cloud Strife Arsenal.
+                        The website will focus on Cloud's weapons, combat abilities,
+                        Materia, and other information from Final Fantasy VII.
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Muhammad Johnson - CSCE 242</p>
+        </footer>
     </body>
 </html>
