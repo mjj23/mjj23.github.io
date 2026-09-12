@@ -139,6 +139,33 @@ h1, h2, h3 {
     display:flex;
 }
 
+/* styles for JS */
+.cool-link {
+    background-color: var(--highlight-bg);
+    color: magenta;
+}
+
+#ball {
+    width: 50px;
+    height: 50px;
+    background-color: #A64F6C;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bouncing-ball {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/* bounce Animation */
+@keyframes bounce {
+    0% {background-color: #A64F6C}
+    50% {background-color: #393d3b;}
+}
+
 /* Responsive Design */
 
 /* 600 px or larger */

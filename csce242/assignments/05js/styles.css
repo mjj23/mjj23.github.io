@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b111c;
+    color: #e8edf5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+#content {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background: #182236;
+}
+
+h1 {
+    text-align: center;
+    color: #66d9ff;
+}
+
+h2 {
+    text-align: center;
+    color: #9dbcff;
+}
+
+#columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.box {
+    flex: 1;
+    min-height: 300px;
+    padding: 20px;
+    background: #202f46;
+    border: 2px solid #66d9ff;
+}
+
+.box h3 {
+    text-align: center;
+    color: #66d9ff;
+}
+
+footer {
+    text-align: center;
+    color: #9bdcff;
+    padding: 15px;
+}
+
+#sticker-area {
+    position: relative;
+    text-align: center;
+}
+
+#materia-image {
+    width:150px;
+    cursor: pointer;
+}
+
+#speech-bubble {
+    display: none;
+    position: relative;
+    width: 130px;
+    margin: 40px auto;
+    padding: 15px;
+    background: #e8edf5;
+    color: #182236;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#speech-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 45px;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: #e8edf5 transparent transparent transparent;
+}
+
+.materia-sticker {
+    position: absolute;
+    font-size: 25px;
+    top: 20px;
+    left: 40px;
+}
+
+@media (max-width: 700px) {
+    #columns {
+        flex-direction: column;
+    }
+
+    .box{
+        width: 100%;
+    }
+}
