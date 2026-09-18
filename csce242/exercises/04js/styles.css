@@ -166,7 +166,13 @@ h1, h2, h3 {
     50% {background-color: #393d3b;}
 }
 
+/* Hidden */
+.hidden {
+    display: none;
+}
+
 /* Responsive Design */
+
 
 /* 600 px or larger */
 @media (min-width: 1000px) {
