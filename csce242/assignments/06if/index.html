@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 8 - If Statements</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main id="content">
+            <h1>Assignment 8</h1>
+            <h2>If Statements</h2>
+            <button id="menu-toggle">▼</button>
+            <nav id="exercise-menu">
+                <a href="#" id="exercise1-link">Exercise 1</a>
+                <a href="#" id="exercise2-link">Exercise 2</a>
+            </nav>
+            <section id="exercise1" class="exercise-box">
+                <h3>Missing Class Points Deductions</h3>
+                <label for="missed-days">
+                    How many days do you intend to miss class?
+                </label>
+                <input type="number" id="missed-days" min="0" placeholder="0">
+                    <p id="grade-loss"></p>
+                    <p id="attendance-message"></p>
+            </section>
+            <section id="exercise2" class="exercise-box hidden">
+                <h3>End of Semester Counter</h3>
+                <p id="days-left"></p>
+                <p id="semester-message"></p>
+            </section>
+            <footer>
+                <p>Muhammad Johnson</p>
+            </footer>
+        </main>
+        <script src="scripts/assignment.js"></script>
+    </body>
+</html>
