@@ -1,0 +1,89 @@
+/* CSS road art created for this assignment. No external CSS art resource used. */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+#content {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+#road-area {
+    margin-top: 30px;
+    padding: 55px 0;
+    background: #7ac943;
+}
+
+#road {
+    height: 180px;
+    background: #353535;
+    position: relative;
+    overflow: hidden;
+}
+
+#lane-line {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 5px;
+    transform: translateY(-50%);
+
+    background: repeating-linear-gradient(
+        to right,
+        #ffd84d 0,
+        #ffd84d 40px,
+        transparent 40px,
+        transparent 75px
+    );
+}
+
+#cars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.car {
+    position: absolute;
+    width: 70px;
+    height: 28px;
+    background: var(--car-color);
+    border-radius: 8px 8px 5px 5px;
+}
+
+.car::before {
+    content: "";
+    position: absolute;
+    width: 38px;
+    height: 18px;
+    left: 16px;
+    top: -13px;
+    background: var(--car-color);
+    border-radius: 8px 8px 0 0;
+}
+
+.car::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 10px;
+    bottom: -6px;
+    background: #222;
+    border-radius: 50%;
+    box-shadow: 38px 0 #222;
+}
