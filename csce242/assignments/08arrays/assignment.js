@@ -59,4 +59,6 @@ const showDestinations = () => {
 };
 
 
-destinationType.onchange = showDestinations;
+destinationType.addEventListener("change", showDestinations);
+
+showDestinations();
