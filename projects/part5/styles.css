@@ -1,0 +1,651 @@
+:root {
+    --background: #050810;
+    --secondary-background: #0b111c;
+    --card-background: #111927;
+    --cyan: #00d9ff;
+    --light-blue: #9bdcff;
+    --white: #ffffff;
+    --gray: #aab3c0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--white);
+    font-family: Arial, sans-serif;
+}
+
+#main-header {
+    background: var(--secondary-background);
+    border-bottom: 1px solid var(--card-background);
+}
+
+.header-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.header-content h1 {
+    margin: 0;
+    color: var(--white);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: var(--gray);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: var(--cyan);
+}
+
+#hero {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(rgba(5, 8, 16, 0.35), rgba(5, 8, 16, 0.75)),
+        url("image/world-map.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-label {
+    color: var(--cyan);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hero-content h2 {
+    max-width: 650px;
+    margin: 10px 0;
+    font-size: 46px;
+    line-height: 1.05;
+}
+
+.hero-content > p:not(.section-label) {
+    max-width: 650px;
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: var(--cyan);
+    color: var(--background);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.secondary-button {
+    background: transparent;
+    color: var(--cyan);
+    border: 1px solid var(--cyan);
+}
+
+#featured-weapons {
+    padding: 60px 0;
+    background: var(--background);
+}
+
+.section-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#featured-weapons h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    text-align: center;
+    color: var(--gray);
+    margin-bottom: 35px;
+}
+
+.weapon-cards {
+    display: flex;
+    gap: 25px;
+}
+
+.weapon-card {
+    flex: 1;
+    padding: 20px;
+    background: var(--card-background);
+    border: 1px solid #1e2c3d;
+}
+
+.weapon-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+}
+
+.weapon-card h3 {
+    color: var(--white);
+}
+
+.weapon-card p {
+    color: var(--gray);
+    line-height: 1.5;
+}
+
+.weapon-card a {
+    color: var(--cyan);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#combat-materia {
+    padding: 60px 0;
+    background: var(--secondary-background);
+}
+
+.combat-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.combat-text {
+    flex: 1;
+}
+
+.combat-text h2 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.combat-text > p {
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+.materia-types {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    color: var(--light-blue);
+}
+
+.combat-image {
+    flex: 1;
+}
+
+.combat-image img {
+    width: 100%;
+    display: block;
+}
+
+#weapon-gallery {
+    padding: 60px 0;
+    background: var(--background);
+}
+
+#weapon-gallery h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-item {
+    width: calc(50% - 10px);
+    padding: 20px;
+    background: var(--card-background);
+    border: 1px solid #1e2c3d;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+.gallery-item h3 {
+    margin: 10px 0 0;
+    color: var(--white);
+}
+
+#main-footer {
+    background: var(--secondary-background);
+    border-top: 1px solid var(--card-background);
+    padding: 40px 0 20px;
+}
+
+.footer-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-about {
+    max-width: 350px;
+}
+
+.footer-about h3,
+.footer-links h4 {
+    color: var(--cyan);
+}
+
+.footer-about p {
+    color: var(--gray);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links a {
+    color: var(--gray);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--cyan);
+}
+
+.copyright {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto 0;
+    padding-top: 15px;
+    border-top: 1px solid var(--card-background);
+    color: var(--gray);
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    #hero {
+        min-height: 500px;
+    }
+
+    .hero-content h2 {
+        font-size: 34px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .weapon-cards {
+        flex-direction: column;
+    }
+
+    .combat-content {
+        flex-direction: column;
+    }
+
+    .materia-types {
+        flex-wrap: wrap;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery-item {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+/* Buster Sword Page */
+
+.weapon-detail {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.weapon-detail-image,
+.weapon-detail-text {
+    flex: 1;
+}
+
+.weapon-detail-image img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.weapon-detail-text h2 {
+    color: var(--white);
+    font-size: 42px;
+    margin: 10px 0 20px;
+}
+
+.weapon-detail-text p {
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+.weapon-stats {
+    margin-top: 25px;
+    padding: 20px;
+    background: var(--card-background);
+    border-left: 4px solid var(--cyan);
+}
+
+.weapon-stats p {
+    margin: 8px 0;
+}
+
+.weapon-info {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto 70px;
+    padding: 30px;
+    background: var(--card-background);
+}
+
+.weapon-info h2 {
+    color: var(--cyan);
+}
+
+.weapon-info p {
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+/* Smaller Screens */
+
+@media (max-width: 700px) {
+
+    .weapon-detail {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .weapon-detail-text h2 {
+        font-size: 34px;
+    }
+
+    .weapon-stats {
+        text-align: left;
+    }
+}
+/* Weapons Page */
+
+.page-heading {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto 30px;
+    text-align: center;
+}
+
+.page-heading h2 {
+    color: var(--white);
+    font-size: 38px;
+    margin: 10px 0;
+}
+
+.page-heading p {
+    color: var(--gray);
+}
+
+.weapon-gallery {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-card {
+    width: calc(33.333% - 14px);
+    background: var(--card-background);
+    padding: 20px;
+    border: 1px solid var(--card-border);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+}
+
+.gallery-card h3 {
+    color: var(--white);
+    margin: 15px 0 8px;
+}
+
+.gallery-card p {
+    color: var(--gray);
+    line-height: 1.5;
+}
+
+.gallery-card a {
+    text-decoration: none;
+}
+
+.gallery-card a:hover h3 {
+    color: var(--cyan);
+}
+
+/* Weapons Page - Smaller Screens */
+
+@media (max-width: 700px) {
+
+    .weapon-gallery {
+        flex-direction: column;
+    }
+
+    .gallery-card {
+        width: 100%;
+    }
+
+    .gallery-card img {
+        height: 200px;
+    }
+}
+/* Combat and Materia Page */
+
+.combat-section,
+.materia-section {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.combat-text,
+.combat-image,
+.materia-text,
+.materia-image {
+    flex: 1;
+}
+
+.combat-text h2,
+.materia-text h2 {
+    color: var(--cyan);
+}
+
+.combat-text p,
+.materia-text p {
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+.combat-image img,
+.materia-image img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.materia-list {
+    margin-top: 20px;
+    padding: 20px;
+    background: var(--card-background);
+    border-left: 4px solid var(--cyan);
+}
+
+.materia-list p {
+    margin: 10px 0;
+}
+
+/* Combat and Materia - Smaller Screens */
+
+@media (max-width: 700px) {
+
+    .combat-section,
+    .materia-section {
+        flex-direction: column;
+    }
+
+    .materia-section {
+        flex-direction: column-reverse;
+    }
+}
+
+/* Weapon Location Page */
+
+.location-list {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto 70px;
+}
+
+.location-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 25px;
+    padding: 25px;
+    background: var(--card-background);
+    border-left: 4px solid var(--cyan);
+}
+
+.location-card img {
+    width: 220px;
+    height: 160px;
+    object-fit: contain;
+}
+
+.location-card h3 {
+    color: var(--cyan);
+    margin-top: 0;
+}
+
+.location-card p {
+    color: var(--gray);
+    line-height: 1.5;
+}
+
+/* Mobile Navigation Button */
+
+.nav-toggle {
+    display: none;
+    background: var(--cyan);
+    color: var(--background);
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Weapon Location - Smaller Screens */
+
+@media (max-width: 700px) {
+
+    .location-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .location-card img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .nav-toggle {
+    display: block;
+}
+
+nav ul {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+nav ul.show {
+    display: flex;
+}
+}
