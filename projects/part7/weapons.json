@@ -1,0 +1,74 @@
+[
+    {
+        "_id": 1,
+        "name": "Buster Sword",
+        "type": "Greatsword",
+        "focus": "Balanced",
+        "location": "Starting Weapon",
+        "description": "Cloud's famous starting sword.",
+        "img_name": "images/buster-sword.png"
+    },
+    {
+        "_id": 2,
+        "name": "Crystal Sword",
+        "type": "Greatsword",
+        "focus": "Damage",
+        "location": "Gongaga",
+        "description": "A strong sword used for heavy attacks.",
+        "img_name": "images/crystal-sword1.png"
+    },
+    {
+        "_id": 3,
+        "name": "Rune Blade",
+        "type": "Greatsword",
+        "focus": "Magic",
+        "location": "Junon",
+        "description": "A sword that works well with magic.",
+        "img_name": "images/rune-blade.png"
+    },
+    {
+        "_id": 4,
+        "name": "Igneous Saber",
+        "type": "Saber",
+        "focus": "Physical",
+        "location": "Mt. Nibel",
+        "description": "A powerful saber made for physical attacks.",
+        "img_name": "images/igneous-saber.png"
+    },
+    {
+        "_id": 5,
+        "name": "Sleek Saber",
+        "type": "Saber",
+        "focus": "Speed",
+        "location": "Grasslands",
+        "description": "A lighter weapon made for faster combat.",
+        "img_name": "images/sleek-saber.png"
+    },
+    {
+        "_id": 6,
+        "name": "Slipstream Saber",
+        "type": "Saber",
+        "focus": "Speed",
+        "location": "Temple of the Ancients",
+        "description": "A quick saber useful for aggressive combat.",
+        "img_name": "images/slipstream-saber.png"
+    },
+    {
+        "_id": 7,
+        "name": "Umbral Blade",
+        "type": "Greatsword",
+        "focus": "Offense",
+        "location": "Dustbowl",
+        "description": "A strong blade focused on offensive attacks.",
+        "img_name": "images/umbral-blade.png"
+    },
+    {
+    "_id": 8,
+    "name": "Other Weapons",
+    "type": "Various",
+    "focus": "Different Styles",
+    "location": "Different Games",
+    "description": "Cloud uses many other weapons across different games, including the Hardedge, Nail Bat, Mythril Saber, Twin Stinger, and Ultima Weapon.",
+    "img_name": "images/other-weapons.png"
+    }
+]
