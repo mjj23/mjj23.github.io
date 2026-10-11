@@ -41,3 +41,51 @@ if (materiaImage) {
         materiaImage.src = materiaImages[currentMateria];
     };
 }
+
+const contactForm = document.getElementById("contact-form");
+const formResult = document.getElementById("form-result");
+
+if (contactForm) {
+    contactForm.onsubmit = async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(contactForm);
+
+        const data = {
+            name: formData.get("name"),
+            email: formData.get("email"),
+            message: formData.get("message")
+        };
+
+        try {
+            const response = await fetch(
+                "https://formsubmit.co/ajax/mjohnsonps4@gmail.com",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
+                    },
+                    body: JSON.stringify(data)
+                }
+            );
+
+            if (response.ok) {
+                formResult.innerHTML = "Message sent successfully!";
+                formResult.style.color = "#00d9ff";
+
+                contactForm.reset();
+            } else {
+                formResult.innerHTML = "There was an error sending your message.";
+                formResult.style.color = "red";
+            }
+        } catch (error) {
+            formResult.innerHTML = "There was an error sending your message.";
+            formResult.style.color = "red";
+        }
+
+        setTimeout(() => {
+            formResult.innerHTML = "";
+        }, 1000);
+    };
+}

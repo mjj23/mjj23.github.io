@@ -683,3 +683,62 @@ nav ul.show {
 .slideshow-buttons button:hover {
     background: var(--light-blue);
 }
+
+/* Contact Form */
+
+#contact-section {
+    width: 90%;
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 30px;
+    background: var(--card-background);
+    border: 1px solid var(--cyan);
+}
+
+#contact-section h2 {
+    text-align: center;
+    color: var(--cyan);
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact-form label {
+    color: var(--light-blue);
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 12px;
+    background: var(--secondary-background);
+    color: var(--white);
+    border: 1px solid var(--gray);
+    font-family: Arial, sans-serif;
+}
+
+#contact-form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+#contact-form button {
+    margin-top: 10px;
+    padding: 12px;
+    background: var(--cyan);
+    color: var(--background);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background: var(--light-blue);
+}
+
+#form-result {
+    min-height: 20px;
+    text-align: center;
+}
